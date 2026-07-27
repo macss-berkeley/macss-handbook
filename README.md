@@ -90,5 +90,10 @@ Some options:
 - GitHub Classroom, if you want one repo per student generated from a template.
 - bCourses, if the work is graded and you would rather not manage repos.
 
+Solutions and answer keys belong out of a public course repo too. A private
+`compss-XXX-instructors` repo is the usual place. Removing them later does not
+retract them, since they stay in the history and in any forks students have
+made.
+
 Grades, feedback, and identifiable submissions are education records, so keep
 them out of public repos wherever they live.
