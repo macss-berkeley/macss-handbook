@@ -95,7 +95,7 @@ it before moving.
 3. Click Transfer ownership, confirm the repo name, and enter `macss-berkeley`
    as the new owner.
 
-It happens immediately, and you keep admin on the repo. GitHub redirects the old
+This happens immediately, and you keep admin on the repo. GitHub redirects the old
 path to the new one, so existing clones keep pushing and pulling and links in
 your syllabus still resolve. Update the remote when it is convenient:
 
@@ -111,9 +111,8 @@ fork it into the org instead and keep your copy primary. Syncing is then manual.
 
 ## Access and teams
 
-Access comes through teams rather than one-off invites, so you can see who can
-write to a course repo in one place. The org's default permission is `none`, so
-joining the org grants nothing by itself.
+We recommend giving access to others through teams, so you can see who can
+write to a course repo in one place. We distinguis between:
 
 - `faculty`: standing team for faculty teaching or maintaining COMPSS courses.
 - `gsis`: parent team that groups the per-semester teams below it. It grants no
@@ -129,19 +128,15 @@ GSI team at the same time.
 
 ## Student work
 
-Where student work lives is your call. The one thing to keep consistent:
-students do not get write access to the `compss-XXX` repo, since that is the
-copy you revise from one semester to the next.
-
-Some options:
+Where student work lives is your call. Some options:
 
 - A separate repo for the offering, such as `compss-211-fa26-projects`, for
   group work or shared scratch space.
 - GitHub Classroom, if you want one repo per student generated from a template.
 - bCourses, if the work is graded and you would rather not manage repos.
 
-Solutions and answer keys belong out of a public course repo too. A private
-`compss-XXX-instructors` repo is the usual place.
+Solutions and answer keys belong out of a public course repo too. We recommend 
+a private compss-XXX-instructors` repo.
 
-Grades, feedback, and identifiable submissions are education records, so keep
-them out of public repos wherever they live.
+Grades, feedback, and identifiable submissions are education records. Please keep
+them out of public repos.
