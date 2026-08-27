@@ -37,7 +37,7 @@ keeps what you delete.
 ## Datahub and nbgitpuller
 
 Course materials reach Datahub through
-[nbgitpuller](https://curriculum-guide.datahub.berkeley.edu/workflows/nbgitpuller-link):
+[nbgitpuller](https://jupyterhub.github.io/nbgitpuller/link?hub=https://datahub.berkeley.edu):
 you generate a link, students click it, and the repo is cloned into their own
 Datahub account. They need no GitHub account and no git.
 
@@ -69,7 +69,7 @@ out of git entirely.
 ### Links
 
 Generate the link with the
-[link generator](https://curriculum-guide.datahub.berkeley.edu/workflows/nbgitpuller-link)
+[link generator](https://jupyterhub.github.io/nbgitpuller/link?hub=https://datahub.berkeley.edu)
 and put it at the top of your README, so a student who lands on GitHub has one
 obvious way out. Clicking it again pulls new files; nbgitpuller merges rather
 than overwrites, so student edits survive.
@@ -82,7 +82,7 @@ relying on it.
 When a link misbehaves, the
 [troubleshooting guide](https://curriculum-guide.datahub.berkeley.edu/support/troubleshooting/nbgitpuller/)
 covers the usual causes. New to Datahub? Start with
-[Getting Started for Instructors](https://rtl.berkeley.edu/datahub-instructor-getting-started).
+[Getting Started for Instructors](https://rtl.berkeley.edu/services-programs/datahub).
 
 ## Transferring a repo into the org
 
