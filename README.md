@@ -111,20 +111,26 @@ fork it into the org instead and keep your copy primary. Syncing is then manual.
 
 ## Access and teams
 
-We recommend giving access to others through teams, so you can see who can
-write to a course repo in one place. We distinguis between:
+Give access through teams rather than one-off invites, so you can see who can
+write to a course repo in one place. Joining the org grants nothing by itself:
+the default permission is `none`.
 
-- `faculty`: standing team for faculty teaching or maintaining COMPSS courses.
-- `gsis`: parent team that groups the per-semester teams below it. It grants no
-  access on its own.
+- `faculty`: faculty teaching or maintaining COMPSS courses.
+- `gsis`: GSIs for the current semester.
 
-GSI teams cover one offering and are named `compss-XXX-gsis-SSYY`, for example
-`compss-211-gsis-fa26`. They usually get `write` on the course repo. Retiring
-the team once grades are in ends access with the appointment.
+Grant the team access to the repo, rather than adding people individually:
 
-You can add and remove people on your own course teams. For a new team, a new
-course repo, or anything org-wide, ask an owner. New courses get a repo and a
-GSI team at the same time.
+```bash
+gh api -X PUT orgs/macss-berkeley/teams/gsis/repos/macss-berkeley/compss-XXX \
+  -f permission=push
+```
+
+At the end of a semester, empty `gsis` rather than removing people one at a
+time. If that gets unwieldy — several courses with different GSIs who should
+not all see each other's repos — split it into per-semester teams then.
+
+You can add and remove people on teams you maintain. For a new team, a new
+course repo, or anything org-wide, ask an owner.
 
 ## Student work
 
