@@ -34,6 +34,56 @@ public, check the licensing. The repo needs a license of its own (see the
 you need the right to redistribute the readings and data in it. Git history
 keeps what you delete.
 
+## Datahub and nbgitpuller
+
+Course materials reach Datahub through
+[nbgitpuller](https://curriculum-guide.datahub.berkeley.edu/workflows/nbgitpuller-link):
+you generate a link, students click it, and the repo is cloned into their own
+Datahub account. They need no GitHub account and no git.
+
+**nbgitpuller only works with public repos.** Berkeley's
+[guidance on distributing files](https://curriculum-guide.datahub.berkeley.edu/workflows/distributing-files/)
+is explicit that links will not work with private repositories. Embedding a
+personal access token in the link is the only workaround and is the same as
+publishing your password, so treat it as unavailable.
+
+This cuts against the private-by-default convention above. If you distribute
+through Datahub, your course repo is public, and everything in "Public vs.
+private" applies before you flip the switch: check that you may redistribute
+every dataset and reading in it, add a license, and remember that git history
+keeps what you deleted.
+
+If a course cannot be public — restricted data, licensed readings — distribute
+through bCourses instead, where students download the files and upload them to
+Datahub by hand. It is clumsier, and it is the honest fallback.
+
+### Solutions
+
+An nbgitpuller link pulls the **whole repo**. A `solutions/` folder in a public
+repo is a folder your students have, and deleting it later does not help:
+history keeps it, and anyone who already pulled still has the files.
+
+Keep solutions, answer keys, exams, and rubrics in a separate private repo, or
+out of git entirely.
+
+### Links
+
+Generate the link with the
+[link generator](https://curriculum-guide.datahub.berkeley.edu/workflows/nbgitpuller-link)
+and put it at the top of your README, so a student who lands on GitHub has one
+obvious way out. Clicking it again pulls new files; nbgitpuller merges rather
+than overwrites, so student edits survive.
+
+Transfers and renames are the usual way links break. GitHub redirects the old
+path, so existing links keep working, but the redirect dies the moment anything
+is created at the old path. Regenerate your links after a transfer rather than
+relying on it.
+
+When a link misbehaves, the
+[troubleshooting guide](https://curriculum-guide.datahub.berkeley.edu/support/troubleshooting/nbgitpuller/)
+covers the usual causes. New to Datahub? Start with
+[Getting Started for Instructors](https://rtl.berkeley.edu/datahub-instructor-getting-started).
+
 ## Transferring a repo into the org
 
 Transferring brings the history, issues, and pull requests along. You need to be
